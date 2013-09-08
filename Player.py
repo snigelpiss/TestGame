@@ -13,7 +13,13 @@ class Inventory:
         script_dir = os.path.dirname(__file__)
         rel_path = "Saves/%s.txt" % self.name
         abs_file_path = os.path.join(script_dir, rel_path)
-        return abs_file_path
+
+        if os.path.exists(abs_file_path):
+            return abs_file_path
+        else:
+            file = open(abs_file_path, "w")
+            file.close()
+            return abs_file_path
 
     def add_item(self, item):
         for k, v in Items.items.items():
