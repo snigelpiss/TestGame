@@ -1,0 +1,1 @@
+^Offensive-Sword^{'Att': 28, 'Unique': 1, 'Name': 'Offensive-Sword', 'Def': 2}

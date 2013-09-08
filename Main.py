@@ -1,6 +1,6 @@
 import Player
 
-ply = Player.Player("Timss")
+ply = Player.Player("Test")
 
 ply.load_inventory()
 
